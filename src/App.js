@@ -3,7 +3,32 @@ import logo from './logo.svg';
 import { Counter } from './features/counter/Counter';
 import './App.css';
 
+import store from './store';
+
+import { bugAdded, bugRemoved, bugResolved } from './actions';
+
 function App() {
+
+  const unsubscribe = store.subscribe(() => {
+    console.log("Store changed!", store.getState())
+  })
+
+  store.dispatch(bugAdded("Bug0d2dddd1"))
+  // store.dispatch(bugRemoved(1))
+  store.dispatch(bugResolved(2))
+  
+  unsubscribe();
+
+  // store.dispatch({
+  //   type: actions.BUG_REMOVED,
+  //   payload: {
+  //     id: 3
+  //   }
+  // })
+
+  // console.log(store.getState())
+
+
   return (
     <div className="App">
       <header className="App-header">
