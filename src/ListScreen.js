@@ -1,53 +1,54 @@
 import React from 'react';
 import { AiOutlineEnter } from "react-icons/ai";
+import { AiOutlineEdit } from "react-icons/ai";
+import { AiOutlineDelete } from "react-icons/ai";
+import { Link } from 'react-router-dom';
 
 function ListScreen(props) {
   return (
     <div className="container">
       <div>
-        <h1>프로젝트 제목</h1>
+        <Link to="/">프로젝트 제목</Link>
       </div>
 
-
       <div className="postContainer">
-        <p className="title">제목</p>
+        <Link to="read">제목</Link>
         <div className="other">
           <p>작성자</p>
-          <button>수정</button>
-          <button>삭제</button>
+          <button><AiOutlineEdit /></button>
+          <button><AiOutlineDelete /></button>
         </div>
       </div>
 
       <div className="postContainer">
-        <p className="title"><AiOutlineEnter className="commentIcon" />댓글 제목1</p>
+        <p><AiOutlineEnter className="commentIcon" />댓글 제목1</p>
         <div className="other">
           <p>작성자</p>
-          <button>수정</button>
-          <button>삭제</button>
+          <button><AiOutlineEdit /></button>
+          <button><AiOutlineDelete /></button>
         </div>
       </div>
 
       <div className="postContainer">
-        <p className="title">
+        <p>
           <AiOutlineEnter className="commentIcon" />
           <AiOutlineEnter className="commentIcon" />
           댓글 제목2</p>
         <div className="other">
           <p>작성자</p>
-          <button>수정</button>
-          <button>삭제</button>
+          <button><AiOutlineEdit /></button>
+          <button><AiOutlineDelete /></button>
         </div>
       </div>
 
       <div className="postContainer">
-        <p className="title">제목</p>
+        <p>제목</p>
         <div className="other">
           <p>작성자</p>
-          <button>수정</button>
-          <button>삭제</button>
+          <button><AiOutlineEdit /></button>
+          <button><AiOutlineDelete /></button>
         </div>
       </div>
-
       
       <button>글쓰기</button>
 

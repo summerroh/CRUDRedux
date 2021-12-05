@@ -7,7 +7,11 @@ import './App.css';
 import store from './store';
 import { bugAdded, bugRemoved, bugResolved } from './actions';
 
+import { BrowserRouter, Routes, Route, Link } from 'react-router-dom';
+
 import ListScreen from './ListScreen';
+import ReadScreen from './ReadScreen';
+import CreateScreen from './CreateScreen';
 
 function App() {
 
@@ -22,7 +26,13 @@ function App() {
     
     
   return (
-      < ListScreen />
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<ListScreen />} />
+        <Route path="/read" element={<ReadScreen />} />
+
+      </Routes>
+    </BrowserRouter>
   );
 }
 

@@ -21,6 +21,51 @@
   margin: 0 40px;
 }
 
+.titleContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* color: purple; */
+  border-top: thin solid gray;
+  border-bottom: thin solid gray;
+  /* background-color: lightcoral; */
+}
+
+.titleContainer > * {
+  height: 40px;
+  margin: 0 40px;
+}
+
+.contentContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* color: purple; */
+  border-top: thin solid gray;
+  border-bottom: thin solid gray;
+  /* background-color: lightcoral; */
+}
+
+.contentContainer > * {
+  height: 200px;
+  margin: 0 40px;
+}
+
+.authorContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* color: purple; */
+  border-top: thin solid gray;
+  border-bottom: thin solid gray;
+  /* background-color: lightcoral; */
+}
+
+.authorContainer > * {
+  height: 40px;
+  margin: 0 40px;
+}
+
 .other {
   display: flex;
   /* background-color: lightgreen; */
@@ -28,4 +73,8 @@
 
 .commentIcon {
   transform: scaleX(-1);
+}
+
+.textInput {
+  width: 100%;
 }
