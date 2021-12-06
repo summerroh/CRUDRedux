@@ -29,11 +29,11 @@
   /* color: purple; */
   border-top: thin solid gray;
   border-bottom: thin solid gray;
+  height: 40px;
   /* background-color: lightcoral; */
 }
 
 .titleContainer > * {
-  height: 40px;
   margin: 0 40px;
 }
 
@@ -41,14 +41,12 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  /* color: purple; */
   border-top: thin solid gray;
   border-bottom: thin solid gray;
-  /* background-color: lightcoral; */
+  height: 160px;
 }
 
 .contentContainer > * {
-  height: 200px;
   margin: 0 40px;
 }
 
@@ -59,11 +57,11 @@
   /* color: purple; */
   border-top: thin solid gray;
   border-bottom: thin solid gray;
+  height: 40px;
   /* background-color: lightcoral; */
 }
 
 .authorContainer > * {
-  height: 40px;
   margin: 0 40px;
 }
 
@@ -77,7 +75,10 @@
 }
 
 .textInput {
+  height: 80%;
   width: 100%;
+  border: none;
+  resize: none;
 }
 
 .icon {

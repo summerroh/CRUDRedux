@@ -9,10 +9,9 @@ import { bugAdded, bugRemoved, bugResolved } from './actions';
 
 import { BrowserRouter, Routes, Route, Link } from 'react-router-dom';
 
-import ListScreen from './ListScreen';
-import ReadScreen from './ReadScreen';
-import CreateScreen from './CreateScreen';
-import UpdateScreen from './UpdateScreen';
+import ListScreen from './screens/ListScreen';
+import ReadScreen from './screens/ReadScreen';
+import CreateScreen from './screens/CreateScreen';
 
 function App() {
 
@@ -32,7 +31,6 @@ function App() {
         <Route path="/" element={<ListScreen />} />
         <Route path="/read" element={<ReadScreen />} />
         <Route path="/create" element={<CreateScreen />} />
-        <Route path="/update" element={<UpdateScreen />} />
       </Routes>
     </BrowserRouter>
   );

@@ -5,7 +5,7 @@ function CreateScreen(props) {
   return (
     <div className="container">
       <div>
-        <Link to="/">프로젝트 제목</Link>
+        <Link to="/"><h2>프로젝트 제목</h2></Link>
       </div>
 
       <div className="postContainer">
