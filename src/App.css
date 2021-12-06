@@ -18,6 +18,7 @@
 }
 
 .postContainer > * {
+  align-items: center;
   margin: 0 40px;
 }
 
@@ -77,4 +78,10 @@
 
 .textInput {
   width: 100%;
+}
+
+.icon {
+  height: 30px;
+  width: 30px;
+  margin: 0 5px 0 5px;
 }

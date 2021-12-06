@@ -15,8 +15,8 @@ function ListScreen(props) {
         <Link to="read">제목</Link>
         <div className="other">
           <p>작성자</p>
-          <button><AiOutlineEdit /></button>
-          <button><AiOutlineDelete /></button>
+          <Link to="/update"><button className='icon'><AiOutlineEdit /></button></Link>
+          <button className='icon'><AiOutlineDelete /></button>
         </div>
       </div>
 
@@ -24,8 +24,8 @@ function ListScreen(props) {
         <p><AiOutlineEnter className="commentIcon" />댓글 제목1</p>
         <div className="other">
           <p>작성자</p>
-          <button><AiOutlineEdit /></button>
-          <button><AiOutlineDelete /></button>
+          <Link to="/update"><button className='icon'><AiOutlineEdit /></button></Link>
+          <button className='icon'><AiOutlineDelete /></button>
         </div>
       </div>
 
@@ -36,8 +36,8 @@ function ListScreen(props) {
           댓글 제목2</p>
         <div className="other">
           <p>작성자</p>
-          <button><AiOutlineEdit /></button>
-          <button><AiOutlineDelete /></button>
+          <Link to="/update"><button className='icon'><AiOutlineEdit /></button></Link>
+          <button className='icon'><AiOutlineDelete /></button>
         </div>
       </div>
 
@@ -45,12 +45,14 @@ function ListScreen(props) {
         <p>제목</p>
         <div className="other">
           <p>작성자</p>
-          <button><AiOutlineEdit /></button>
-          <button><AiOutlineDelete /></button>
+          <Link to="/update"><button className='icon'><AiOutlineEdit /></button></Link>
+          <button className='icon'><AiOutlineDelete /></button>
         </div>
       </div>
+
+      <p>1 2 3 4 5</p>
       
-      <button>글쓰기</button>
+      <Link to="/create"><button>글쓰기</button></Link>
 
     </div>
   );

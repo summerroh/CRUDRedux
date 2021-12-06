@@ -23,8 +23,8 @@ function ReadScreen(props) {
         <p>내용</p>
       </div>
 
-      <button><AiOutlineEdit /></button>
-      <button><AiOutlineDelete /></button>
+      <Link to="/update"><button className='icon'><AiOutlineEdit /></button></Link>
+      <button className='icon'><AiOutlineDelete /></button>
 
     </div>
   );
